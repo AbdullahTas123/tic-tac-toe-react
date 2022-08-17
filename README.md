@@ -1,4 +1,4 @@
-# TIC TAC TOE GAME with REACT
+# Tic-Tac-Toe Game with React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## Image From the Tic Tac Toe Game
+## Image From the Tic-Tac-Toe Game
 
 ![tictactoe](public/tictactoe.jpg)
 
