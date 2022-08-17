@@ -1,0 +1,60 @@
+.tictactoe {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.tictactoe-header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.tictactoe-table {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.tictactoe-table th {
+  width: 100px;
+  height: 100px;
+}
+
+.square {
+  background-color: rgb(142, 205, 205);
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+  font-size: 2.5rem;
+  pointer-events: all;
+
+}
+
+.square:hover {
+  border: 2px solid rgb(56, 133, 136);
+  cursor: pointer;
+}
+
+.winner-section {
+  margin-top: 40px;
+}
+
+.winner-section p {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.winner-section button {
+  margin-top: 50px;
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.winner-section button:hover {
+  cursor: pointer;
+}

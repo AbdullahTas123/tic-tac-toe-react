@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+import TicTacToe from "./components/TicTacToe";
 
 function App() {
   return (
     <div className="App">
-      TIC TAC TOE REACT APP
+      <TicTacToe />
     </div>
   );
 }
