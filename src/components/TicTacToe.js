@@ -5,6 +5,7 @@ const TicTacToe = () => {
   const [cells, setCells] = useState(Array(9).fill(""));
   const [turn, setTurn] = useState("X");
   const [winner, setWinner] = useState("");
+  const [clickNum, setClickNum] = useState(0);
 
   const checkWinner = (squares) => {
     const winCondition = [
@@ -21,11 +22,15 @@ const TicTacToe = () => {
     for (let i = 0; i < winCondition.length; i++){
       console.log(winCondition[i]);
       if (squares[winCondition[i][0]] === "" || squares[winCondition[i][1]] === "" || squares[winCondition[i][2]] === "") {
-      }
-      else if (squares[winCondition[i][0]] === squares[winCondition[i][1]] && squares[winCondition[i][0]] === squares[winCondition[i][2]]){
+      } else if (squares[winCondition[i][0]] === squares[winCondition[i][1]] && squares[winCondition[i][0]] === squares[winCondition[i][2]]){
         setWinner(squares[winCondition[i][0]]);
+        setClickNum(0);
+      } else if (clickNum === 8) {
+        setWinner("No Winner");
+        setClickNum(0);
       }
     }
+
   }
   
   const handleClick = (num) => {
@@ -42,11 +47,10 @@ const TicTacToe = () => {
       squares[num] = "O";
       setTurn("X");
     }
-
+    setClickNum(clickNum + 1)
     checkWinner(squares);
     setCells(squares);
     //console.log(squares);
-    
   }
 
   const handleRestart = () => {
